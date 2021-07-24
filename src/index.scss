@@ -1,0 +1,145 @@
+html{
+    font-size: 62.5%;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: url(./image/background-1.jpg);
+    background-size: cover;
+    color: #fff;
+    line-height:2.5rem;
+  }
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  h1{
+    text-align: center;
+    font-size:6rem;
+    font-weight:700;
+  }
+  h2{
+    text-align: center;
+    font-size:5rem;
+    font-weight:700;
+  }
+  //----------------------------------------------Home----------------------------
+  .home{
+      margin: 3rem 10rem;
+    &__info{
+        margin-top: 10rem;
+    }
+  }
+  .menu{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin-bottom: 10rem;
+  }
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size:3rem;
+    display: block;
+    margin-right: 7rem;
+    padding: 1rem 2rem;
+    &:hover{
+        background-color:grey;
+    }
+}
+
+
+
+
+
+  //----------------------------------------------APOD----------------------------
+  .apod{
+      margin: 5rem 10rem;
+  }
+ 
+
+.photo{
+    margin-top: 10rem;
+    font-size: 2rem;
+    &__title{
+      font-size: 3.5rem;
+      font-weight: 400;
+      margin-bottom: 3rem;
+    }
+    &__info{
+      margin-bottom: 3rem;
+
+    }
+    &__wrapper{
+        text-align: center;
+        margin: 0 auto;
+        width:100%;
+      margin-bottom: 3rem;
+
+    }
+    &__image{
+        width: 100%;
+        height:auto;
+    }
+}
+  //----------------------------------------------Search----------------------------
+.search{
+  margin: 5rem 10rem;
+  &__form{
+    background-color:rgba(37, 15, 116, 0.438);
+    min-height:5rem;
+    min-width: 30rem;
+    margin:10rem 30rem;
+    position: relative;
+  }
+
+  &__input{
+    margin-left: 2rem;
+    background-color: transparent;
+    border:0;
+    height: 5rem;
+    outline:none;
+    font-size:3rem;
+    background: -webkit-linear-gradient(rgb(70, 11, 207), rgb(10, 207, 181));
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    &::placeholder{
+    color: rgb(84, 219, 31);
+      width: 100%;
+     }
+
+  }
+  &__button{
+    background: -webkit-linear-gradient(rgb(70, 11, 207), rgb(10, 207, 181));
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    outline:none;
+    background-color: transparent;
+    border:0;
+    font-size:3rem;
+    min-height: 5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+  }
+
+  &__image--wrapper{
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__image{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+
+
+

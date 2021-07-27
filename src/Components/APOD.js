@@ -19,7 +19,6 @@ export default function APOD() {
             );
             const data =await res.json();
             setPhotoData(data);
-            console.log(data)
         }
        
     }, [])

@@ -29,17 +29,23 @@ const handleClick=()=>{
                     var imageHtml= arrayData.map((subItem)=>{
                         let url
                         let alt
+                        let desc
                         if(subItem.links){
+                            desc=subItem.data[0].description
                             url=subItem.links[0].href
                             alt=subItem.links[0].rel
                             return (
                                 `
                                 <div className="search__image--wrapper">
+                                     <p className="search__image--desc">${desc}</p>
                                       <img className="search__image" src=${url} alt="${alt}"
-                                      onerror="this.style.display='none';"/>
+                                      onerror="this.parentNode.style.display='none';"/>
                                 </div>   
                                 `
                             )
+                        }
+                        else{
+                            return (``)
                         }
       
                         
@@ -59,14 +65,13 @@ const handleClick=()=>{
 
     return (
         <div className="search">
-            <h2>Image and Video Search</h2>
+            <h2 className="search__title">Image and Video Search</h2>
              <div  className="search__form">
                 <input className="search__input" type="text" ref={textInput} placeholder="Enter key word" />
                  <button className="search__button" onClick={handleClick}>Search</button>
              </div>
-             <div className="search__images--container" id="search__images--container">
-
-             </div>
+             <h3 className="search__keyword">Results of "<span>{searchInput}</span>" in Nasa Image Library</h3>
+             <div className="search__images--container" id="search__images--container"> </div>
         </div>
     )
 }

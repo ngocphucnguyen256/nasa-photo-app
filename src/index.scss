@@ -28,12 +28,18 @@ html{
     font-size:5rem;
     font-weight:700;
   }
+  h3{
+    font-size:3.5rem;
+    font-weight:400;
+  }
   //----------------------------------------------Home----------------------------
   .home{
-      margin: 3rem 10rem;
+      margin: 5rem 10rem;
     &__info{
-        margin-top: 10rem;
+        margin-top: 20rem;
+        margin-bottom: 20rem;
     }
+  
   }
   .menu{
       display:flex;
@@ -90,6 +96,19 @@ html{
   //----------------------------------------------Search----------------------------
 .search{
   margin: 5rem 10rem;
+  &__title{
+    margin-bottom: 10rem;
+  }
+  &__keyword{
+    margin-bottom: 10rem;
+    text-align: center;
+    >span{
+      background: -webkit-linear-gradient(rgb(70, 11, 207), rgb(10, 207, 181));
+      -webkit-background-clip: text;
+      background-clip:text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
   &__form{
     background-color:rgba(37, 15, 116, 0.438);
     min-height:5rem;
@@ -136,7 +155,11 @@ html{
     margin: 0 auto;
     >div{
       display:block;
-      margin-bottom: 5rem;
+      margin-bottom: 10rem;
+      >p{
+        font-size:2rem;
+        margin-bottom: 3rem;
+      }
     }
   }
 
@@ -146,6 +169,37 @@ html{
   }
 }
 
+
+  //----------------------------------------------EPIC----------------------------
+
+  .epic{
+    margin: 5rem 10rem;
+    &__title{
+      margin-bottom: 20rem;
+    }
+    &__caption{
+      text-align: center;
+      margin-bottom: 10rem;
+    }
+    &__images--container{
+      width: 100%;
+      text-align: center;
+      margin: 0 auto;
+      >div{
+        display: block;
+        margin-bottom: 10rem;
+        >p{
+          font-size:3rem;
+          margin-bottom:2rem;
+        }
+        >img{
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  
+  }
 
 
 

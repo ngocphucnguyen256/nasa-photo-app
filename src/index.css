@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url(./image/background-1.jpg);
+  background-attachment: fixed;
   background-size: cover;
   color: #fff;
   line-height: 2.5rem;
@@ -154,9 +155,15 @@ h2 {
   right: 1rem;
 }
 
-.search__image--wrapper {
+.search__images--container {
+  text-align: center;
   width: 100%;
   margin: 0 auto;
+}
+
+.search__images--container > div {
+  display: block;
+  margin-bottom: 5rem;
 }
 
 .search__image {

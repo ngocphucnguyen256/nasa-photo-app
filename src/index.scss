@@ -9,6 +9,7 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image: url(./image/background-1.jpg);
+    background-attachment: fixed;
     background-size: cover;
     color: #fff;
     line-height:2.5rem;
@@ -129,15 +130,25 @@ html{
     right: 1rem;
   }
 
-  &__image--wrapper{
+  &__images--container{
+    text-align: center;
     width: 100%;
     margin: 0 auto;
+    >div{
+      display:block;
+      margin-bottom: 5rem;
+    }
   }
+
   &__image{
     width: 100%;
     height: auto;
   }
 }
+
+
+
+
 
 
 

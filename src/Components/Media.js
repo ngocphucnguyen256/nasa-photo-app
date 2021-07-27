@@ -12,9 +12,12 @@ export default function Media(mediaType, mediaUrl) {
         )
     }
     else{
-        <div>
-            <ReactPlayer/>
-        </div>
+        return(
+            <div>
+                 <ReactPlayer url={mediaUrl}/>
+             </div>
+        )
 
     }
+
 }

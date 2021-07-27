@@ -7,7 +7,7 @@ export default function Home() {
             <div className="menu">
                 <Link className="link" to='/APOD' >Picture of the day</Link>
                 <Link className="link" to='/Search' >Search</Link>
-                <Link className="link" to='/APOD' >Epic</Link>
+                <Link className="link" to='/EPIC' >Epic</Link>
             </div>
             <h1>Nasa Api App</h1>
             <div className="home__info">

@@ -5,7 +5,6 @@ import {useState, useEffect} from 'react'
 
 export default function Search() {
 
-    const [mediaUrl,  setMediaUrl] =useState([]);
     const [searchInput, setSearchInput]= useState("Earth");
     let textInput = React.createRef();
 

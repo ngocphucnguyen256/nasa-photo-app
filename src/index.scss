@@ -32,6 +32,10 @@ html{
     font-size:3.5rem;
     font-weight:400;
   }
+  img{
+    width: 100%;
+    height:auto;
+  }
   //----------------------------------------------Home----------------------------
   .home{
       margin: 5rem 10rem;
@@ -49,14 +53,33 @@ html{
   }
 .link{
     text-decoration: none;
+    border:1px solid;
+    border-radius:3rem;
     color: #fff;
     font-size:3rem;
     display: block;
     margin-right: 7rem;
-    padding: 1rem 2rem;
-    &:hover{
-        background-color:grey;
-    }
+    padding: 2rem 3rem;
+    position: relative;
+    &:before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left:auto;
+      right:0;
+      top:0;
+      height:100%;
+      width: 0;
+      transition: 0.25s;
+      background-color:#12737a;
+      border-radius: 3rem;
+  }
+    &:hover:before{
+      width:100%;
+      left:0;
+      right: auto;
+  }
+
 }
 
 
@@ -86,12 +109,8 @@ html{
         margin: 0 auto;
         width:100%;
       margin-bottom: 3rem;
-
     }
-    &__image{
-        width: 100%;
-        height:auto;
-    }
+ 
 }
   //----------------------------------------------Search----------------------------
 .search{
@@ -103,7 +122,7 @@ html{
     margin-bottom: 10rem;
     text-align: center;
     >span{
-      background: -webkit-linear-gradient(rgb(70, 11, 207), rgb(10, 207, 181));
+      background: -webkit-linear-gradient(rgb(72, 2, 235), rgb(8, 243, 212));
       -webkit-background-clip: text;
       background-clip:text;
       -webkit-text-fill-color: transparent;
@@ -115,6 +134,8 @@ html{
     min-width: 30rem;
     margin:10rem 30rem;
     position: relative;
+    border-radius: 3rem;
+    padding:0.5rem 2.5rem;
   }
 
   &__input{
@@ -124,7 +145,7 @@ html{
     height: 5rem;
     outline:none;
     font-size:3rem;
-    background: -webkit-linear-gradient(rgb(70, 11, 207), rgb(10, 207, 181));
+    background: -webkit-linear-gradient(rgb(72, 2, 235), rgb(8, 243, 212));
     -webkit-background-clip: text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -135,7 +156,7 @@ html{
 
   }
   &__button{
-    background: -webkit-linear-gradient(rgb(70, 11, 207), rgb(10, 207, 181));
+    background: -webkit-linear-gradient(rgb(72, 2, 235), rgb(8, 243, 212));
     -webkit-background-clip: text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -147,6 +168,30 @@ html{
     cursor: pointer;
     position: absolute;
     right: 1rem;
+    &:before{
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left:auto;
+      right:0;
+      top:0;
+      height:100%;
+      width: 0;
+      transition: 0.25s;
+      background-color:#585858;
+      border-radius: 3rem;
+  }
+    &:hover:before{
+      width:100%;
+      left:0;
+      right: auto;
+  }
+    &:hover{
+    background: -webkit-linear-gradient(rgb(243, 219, 2), rgb(175, 3, 255));
+    -webkit-background-clip: text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    }
   }
 
   &__images--container{
@@ -203,8 +248,38 @@ html{
 
 
 
-
-
+  @media only screen and (max-width:80rem){
+    html{
+      font-size:50%;
+    }
+    @media only screen and (max-width:65rem){
+      html{
+        font-size:40%;
+      }
+      @media only screen and (max-width: 52rem)  {
+        html{
+            font-size:30%;
+        }
+        
+    @media only screen and (max-width: 40rem)  {
+        html{
+            font-size:20%;
+        }
+        @media only screen and (max-width:27rem){
+          html{
+            font-size:15%;
+          }
+          @media only screen and (max-width:18rem){
+            html{
+              font-size:10%;
+            }
+          }
+        }
+     }
+     }
+    
+    }
+  }
 
 
 

@@ -8,11 +8,16 @@ export default function Search() {
     const [searchInput, setSearchInput]= useState("Earth");
     let textInput = React.createRef();
 
-const handleClick=()=>{
-    setSearchInput(textInput.current.value);
-}
+    const handleClick=()=>{
+        setSearchInput(textInput.current.value);
+    }
 
-
+    const keyPresshandler=(e)=>{
+        if(e.keyCode===13){
+         setSearchInput(textInput.current.value);
+                
+        }
+    }
     useEffect(() => {
         async function fetchPhotoData() {
             const res = await fetch(
@@ -60,6 +65,7 @@ const handleClick=()=>{
         
          },[searchInput])
 
+     
 
 
 
@@ -67,7 +73,8 @@ const handleClick=()=>{
         <div className="search">
             <h2 className="search__title">Image and Video Search</h2>
              <div  className="search__form">
-                <input className="search__input" type="text" ref={textInput} placeholder="Enter key word" />
+                <input className="search__input" type="text" ref={textInput} placeholder="Enter key word"
+                 onKeyDown={keyPresshandler} />
                  <button className="search__button" onClick={handleClick}>Search</button>
              </div>
              <h3 className="search__keyword">Results of "<span>{searchInput}</span>" in Nasa Image Library</h3>

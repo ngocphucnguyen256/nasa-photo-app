@@ -162,6 +162,7 @@ img {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 80%;
 }
 
 .search__input::-webkit-input-placeholder {
@@ -197,6 +198,7 @@ img {
   cursor: pointer;
   position: absolute;
   right: 1rem;
+  width: 20%;
 }
 
 .search__button:before {

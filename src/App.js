@@ -6,7 +6,7 @@ import EPIC from './Components/EPIC'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Route component={Home} path="/" exact/>
         <Route component={APOD} path="/APOD"/>

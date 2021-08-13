@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Music-App/static/css/main.4d55fcf5.chunk.css",
-    "main.js": "/Music-App/static/js/main.a9659bd1.chunk.js",
-    "main.js.map": "/Music-App/static/js/main.a9659bd1.chunk.js.map",
-    "runtime-main.js": "/Music-App/static/js/runtime-main.e1729fd8.js",
-    "runtime-main.js.map": "/Music-App/static/js/runtime-main.e1729fd8.js.map",
-    "static/js/2.58ed9769.chunk.js": "/Music-App/static/js/2.58ed9769.chunk.js",
-    "static/js/2.58ed9769.chunk.js.map": "/Music-App/static/js/2.58ed9769.chunk.js.map",
-    "static/js/3.bf835d56.chunk.js": "/Music-App/static/js/3.bf835d56.chunk.js",
-    "static/js/3.bf835d56.chunk.js.map": "/Music-App/static/js/3.bf835d56.chunk.js.map",
-    "index.html": "/Music-App/index.html",
-    "static/css/main.4d55fcf5.chunk.css.map": "/Music-App/static/css/main.4d55fcf5.chunk.css.map",
-    "static/js/2.58ed9769.chunk.js.LICENSE.txt": "/Music-App/static/js/2.58ed9769.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/Music-App/static/media/background-1.d45c8440.jpg"
+    "main.css": "/nasa-photo-app/static/css/main.f5545036.chunk.css",
+    "main.js": "/nasa-photo-app/static/js/main.861f965e.chunk.js",
+    "main.js.map": "/nasa-photo-app/static/js/main.861f965e.chunk.js.map",
+    "runtime-main.js": "/nasa-photo-app/static/js/runtime-main.bff41599.js",
+    "runtime-main.js.map": "/nasa-photo-app/static/js/runtime-main.bff41599.js.map",
+    "static/js/2.58ed9769.chunk.js": "/nasa-photo-app/static/js/2.58ed9769.chunk.js",
+    "static/js/2.58ed9769.chunk.js.map": "/nasa-photo-app/static/js/2.58ed9769.chunk.js.map",
+    "static/js/3.bf835d56.chunk.js": "/nasa-photo-app/static/js/3.bf835d56.chunk.js",
+    "static/js/3.bf835d56.chunk.js.map": "/nasa-photo-app/static/js/3.bf835d56.chunk.js.map",
+    "index.html": "/nasa-photo-app/index.html",
+    "static/css/main.f5545036.chunk.css.map": "/nasa-photo-app/static/css/main.f5545036.chunk.css.map",
+    "static/js/2.58ed9769.chunk.js.LICENSE.txt": "/nasa-photo-app/static/js/2.58ed9769.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/nasa-photo-app/static/media/background-1.d45c8440.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1729fd8.js",
+    "static/js/runtime-main.bff41599.js",
     "static/js/2.58ed9769.chunk.js",
-    "static/css/main.4d55fcf5.chunk.css",
-    "static/js/main.a9659bd1.chunk.js"
+    "static/css/main.f5545036.chunk.css",
+    "static/js/main.861f965e.chunk.js"
   ]
 }

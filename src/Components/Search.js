@@ -13,7 +13,10 @@ export default function Search() {
     }
 
     const keyPresshandler=(e)=>{
+        if(e.keyCode===13){
          setSearchInput(textInput.current.value);
+                
+        }
     }
     useEffect(() => {
         async function fetchPhotoData() {

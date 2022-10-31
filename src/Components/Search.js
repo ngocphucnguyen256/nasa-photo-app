@@ -13,9 +13,8 @@ export default function Search() {
     }
 
     const keyPresshandler=(e)=>{
-
+        console.log('change text')
          setSearchInput(textInput.current.value);
-
     }
     useEffect(() => {
         async function fetchPhotoData() {
